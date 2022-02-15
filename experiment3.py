@@ -67,7 +67,7 @@ def main():
             # Using the tax formula, calculate price and round to two decimal places
             price = round((n1*n2)*(1+(n2/100)), 2)
 
-            input("Using the first number as your intial price (${0}), and your second number as your tax percentage ({1}), we can get the following:".format(
+            input("Using the first number as your initial price (${0}), and your second number as your tax percentage ({1}), we can get the following:".format(
                 n1, round((n2/100), 2)))
 
             input('\n''\t'"Your final price is: ${0}.".format(tax))
