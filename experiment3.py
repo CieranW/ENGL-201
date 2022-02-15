@@ -1,19 +1,19 @@
 # Experiment3: Hermit Crab Essay
-input('\n'"Welcome to my essay for Experiment #3. Press Enter on your keyboard to continue unless prompted otherwise."'\n')
-input("This is a script designed to be in Hermit Crab essay format."'\n')
-input("Throughout the experiment, I will be utilizing the different types of Python functions and programs as shells, and my words/writings as fillers for the aforementioned shells."'\n')
-
-
 def main():
+    input('\n'"Welcome to my essay for Experiment #3. Press Enter on your keyboard to continue unless prompted otherwise."'\n')
+    input("This is a script designed to be in Hermit Crab essay format."'\n')
+    input("Throughout the experiment, I will be utilizing the different types of Python functions and programs as shells, and my words/writings as fillers for the aforementioned shells."'\n')
     count = 0
+
     while count == 0:
         # Give reader a choice.
         choice = str(input("So, shall we begin? (Enter y or n to start)"'\n'))
         yes = "y"
         no = "n"
-        if choice != no or choice != yes:
-            count += 0
+
+        if choice is not no or choice is not yes:
             print("Please enter a valid answer."'\n')
+            count += 0
 
         if choice == no:
             count += 1
@@ -93,11 +93,16 @@ def main():
                 "'Wonderful, my good lord. {0} I bid thee good day.'".format(q1))
             input('\t'"And so ends our wonderful story of a man in a doughnut shop."'\n')
 
-            input("Thank you for coming along on my little adventure. Whether or not I will attempt to do this again remains to be seen, depending on the grade I get. Although I perhaps may not have followed the prompt assigned, it was my ambition to use a programming language as a medium or an avenue for my essay. Regardless of the result, I have had quite the time writing this, which is nothing to laugh at as I have spent a deal greater than I would have should I have stuck with writing it out in Microsoft Word. There were many challenges that I have faced, bugs to debug, and formats to change, many of which, given the time I had have not solved nor figured out. An example being getting the paragraphs and sentences to format correctly in the terminal. Nevertheless, I very much enjoyed doing this and would hope to commit in the future."'\n')
+            # Loop to run program again.
+            q2 = str(input("Would you like to run that again? (y/n)"'\n'))
+            if q2 == no:
+                input("Thank you for coming along on my little adventure. Whether or not I will attempt to do this again remains to be seen, depending on the grade I get. Although I perhaps may not have followed the prompt assigned, it was my ambition to use a programming language as a medium or an avenue for my essay. Regardless of the result, I have had quite the time writing this, which is nothing to laugh at as I have spent a deal greater than I would have should I have stuck with writing it out in Microsoft Word. There were many challenges that I have faced, bugs to debug, and formats to change, many of which, given the time I had have not solved nor figured out. An example being getting the paragraphs and sentences to format correctly in the terminal. Nevertheless, I very much enjoyed doing this and would hope to commit in the future."'\n')
 
-            input('\t'"The End."'\t')
-        else:
-            count = 0
+                input('\t'"The End."'\t')
+                break
+
+            if q2 == yes:
+                count -= 2
 
 
 # Calls upon the function, main
