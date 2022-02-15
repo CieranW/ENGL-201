@@ -11,9 +11,14 @@ def main():
         choice = str(input("So, shall we begin? (Enter y or n to start)"'\n'))
         yes = "y"
         no = "n"
+        if choice != no or choice != yes:
+            count += 0
+            print("Please enter a valid answer."'\n')
+
         if choice == no:
             count += 1
-            print("Sorry to see you go :)")  # Ends the program.
+            print("Sorry to see you go :)")
+            break  # Ends the program.
 
         if choice == yes:
             count += 2
