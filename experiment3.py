@@ -78,7 +78,7 @@ def main():
             input("Let's put your sentence and numbers to good use."'\n')
 
             # Story time, takes in the string and numbers inputted by reader and turns it into a story.
-            input('\t'"A man walks into a small, quaint shop that sells doughnuts (I'm craving dougnuts as I'm typing this).")
+            input('\t'"A man walks into a small, quaint shop that sells doughnuts (I'm craving doughnuts as I'm typing this).")
             input(
                 "He exclaims, 'How much for one, kind sir?', to which the owner replies, 'Why my good man, it is ${0} a piece.'".format(n1))
             input("'I will take {0} then', the man remarks.".format(n2))
