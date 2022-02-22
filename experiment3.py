@@ -7,12 +7,11 @@ def intro():
 
 def yes_or_no():
     count = 0
-
+    yes = "y"
+    no = "n"
     while count == 0:
         # Give reader a choice.
         choice = str(input("So, shall we begin? (Enter y or n to start)"'\n'))
-        yes = "y"
-        no = "n"
 
         if choice is not no or choice is not yes:
             print("Please enter a valid answer."'\n')
@@ -87,6 +86,7 @@ def questions():
 
     input(
         '\n'"This is done through the following calculation: ${n1} x (1+({n2}/100)) = ${tax}."'\n')
+    return q1, n1, n2, price
 
 
 def story_time():
