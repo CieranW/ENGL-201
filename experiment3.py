@@ -13,7 +13,7 @@ def yes_or_no():
         # Give reader a choice.
         choice = str(input("So, shall we begin? (Enter y or n to start)"'\n'))
 
-        if choice is not no or choice is not yes:
+        if choice is not no and choice is not yes:
             print("Please enter a valid answer."'\n')
             count += 0
 
@@ -24,6 +24,7 @@ def yes_or_no():
 
         if choice == yes:
             count += 2
+    return choice
 
 
 def main_body():
