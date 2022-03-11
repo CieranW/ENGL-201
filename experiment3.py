@@ -34,11 +34,15 @@ def questions():
 
     input("But words and sentences are not the only thing I can take in from you and call upon later. Python is capable of doing that with numbers too."'\n')
 
-    # Stores number 1
-    user_number1 = int(
-        input("Please indulge me and enter a whole number of your own choosing:"'\n'))
-    # Stores number 2
-    user_number2 = int(input('\n'"Now enter a second number:"'\n'))
+    while True:
+        try:
+            user_number1 = int(
+                input("Please indulge me and enter a whole number of your own choosing:"'\n'))
+            user_number2 = int(input('\n'"Now enter a second number:"'\n'))
+            break
+        except ValueError:
+            input("Please enter a whole number.")
+            continue
 
     input("Why don't we take those two numbers and turn it into an equation?"'\n')
     input("Try a simple x^2 + y^2."'\n')
@@ -90,15 +94,16 @@ def ending1():
     no = "n"
     yes = "y"
     # Loop to run program again.
-    q2 = str(input("Would you like to run that again? (y/n)"'\n'))
-    if q2 == no:
+    choice2 = str(input("Would you like to run that again? (y/n)"'\n'))
+    if choice2 == no:
         input("Thank you for coming along on my little adventure. Whether or not I will attempt to do this again remains to be seen, depending on the grade I get. Although I perhaps may not have followed the prompt assigned, it was my ambition to use a programming language as a medium or an avenue for my essay. Regardless of the result, I have had quite the time writing this, which is nothing to laugh at as I have spent a deal greater than I would have should I have stuck with writing it out in Microsoft Word. There were many challenges that I have faced, bugs to debug, and formats to change, many of which, given the time I had have not solved nor figured out. An example being getting the paragraphs and sentences to format correctly in the terminal. Nevertheless, I very much enjoyed doing this and would hope to commit in the future."'\n')
 
         input('\t'"The End."'\t')
 
         # break
 
-    if q2 == yes:
+    if choice2 == yes:
+        # Change to a while True function as the counter is dog shit.
         count -= 2
 
 
