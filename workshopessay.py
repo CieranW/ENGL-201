@@ -1,13 +1,15 @@
 import textwrap
 
 
-def main_body(essay_count):
+def main_function(essay_count):
     intro()
     if essay_count == 0:
         print(
             "Which essay would you like to read first? \nOption a) My first memory \nOption b) An objective approach tackling the concept of muscle memory  \nOption c) Why do I do this to myself?\n")
 
         choose_essay_to_read = input("Enter the letter of your choice: ")
+
+# Essays, introduction, conclusion, and connectors for essays.
 
 
 def intro():
@@ -35,4 +37,4 @@ def essay3():
 essay_choices = ["Sexualizing Food", "The Mind and Body in all glory",
                  "Pain and Agony bring Beauty and Appreciation into play"]
 essay_count = 0
-main_body(essay_count)
+main_function(essay_count)
