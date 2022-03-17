@@ -45,6 +45,7 @@ def questions():
             continue
 
     input("Why don't we take those two numbers and turn it into an equation?"'\n')
+    # Find more equations/give user a wider varitety/based on the numbers, output your own equation.
     input("Try a simple x^2 + y^2."'\n')
     input("Taking in your numbers from earlier, we should get the following:"'\n')
 
@@ -52,7 +53,7 @@ def questions():
     answer1 = (user_number1*user_number1) + (user_number2*user_number2)
     number_combo1 = user_number1*user_number1
     number_combo2 = user_number2*user_number2
-    input(answer1)
+    input(answer1)  # Take the equation from answer1 and turn into a graph
 
     input("As shown, {0}^2 should give us {1}, and {2}^2 is {3}. And together they give us {4}.".format(
         user_number1, (number_combo1), user_number2, (number_combo2), answer1))
@@ -75,7 +76,6 @@ def questions():
 
 
 def story_time():
-    # user_phrase1, user_number1, user_number2, price = questions()
     input("Let's put your sentence and numbers to good use."'\n')
 
     # Story time, takes in the string and numbers inputted by reader and turns it into a story.
@@ -93,18 +93,16 @@ def story_time():
 def ending1():
     no = "n"
     yes = "y"
-    # Loop to run program again.
+
     choice2 = str(input("Would you like to run that again? (y/n)"'\n'))
     if choice2 == no:
         input("Thank you for coming along on my little adventure. Whether or not I will attempt to do this again remains to be seen, depending on the grade I get. Although I perhaps may not have followed the prompt assigned, it was my ambition to use a programming language as a medium or an avenue for my essay. Regardless of the result, I have had quite the time writing this, which is nothing to laugh at as I have spent a deal greater than I would have should I have stuck with writing it out in Microsoft Word. There were many challenges that I have faced, bugs to debug, and formats to change, many of which, given the time I had have not solved nor figured out. An example being getting the paragraphs and sentences to format correctly in the terminal. Nevertheless, I very much enjoyed doing this and would hope to commit in the future."'\n')
 
         input('\t'"The End."'\t')
 
-        # break
-
     if choice2 == yes:
-        # Change to a while True function as the counter is dog shit.
-        count -= 2
+        questions()
+        story_time()
 
 
 def ending2():
@@ -113,26 +111,22 @@ def ending2():
 
 # Calls upon the functions in order of how they should be presented or the questions.
 intro()
-count = 0
 yes = "y"
 no = "n"
-while count == 0:
-    # Give reader a choice.
-    choice = str(input("So, shall we begin? (Enter y or n to start)"'\n'))
+while True:
+    try:
+        choice = str(input("So, shall we begin? (Enter y or n to start)"'\n'))
 
-    if choice is not no and choice is not yes:
+        if choice == no:
+            ending2()
+            break
+
+        if choice == yes:
+            main_body()
+            questions()
+            story_time()
+            ending1()
+
+    except ValueError:
         print("Please enter a valid answer."'\n')
-        count += 0
-
-    if choice == no:
-        count += 1
-        ending2()
-        break  # Ends the program.
-
-    if choice == yes:
-        count += 2
-        main_body()
-        questions()
-        story_time()
-        ending1()
-        ending2()
+        continue
