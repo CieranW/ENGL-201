@@ -1,17 +1,8 @@
-def main():
+def main(essay_count):
     if essay_count == 0:
-        choose_which_essay_to_read_first = input(
+        print(
             "Which essay would you like to read first? \nOption a) My first memory \nOption b) An objective approach tackling the concept of muscle memory  \nOption c) Why do I do this to myself?\n")
-        for key in essay_choices:
-            if key == "a":
-                essay1()
-                essay_count += 1
-            if key == "b":
-                essay2()
-                essay_count += 1
-            if key == "c":
-                essay3()
-                essay_count += 1
+        choose_essay_to_read = input("Enter the letter of your choice: ")
 
 
 def intro():
@@ -36,6 +27,7 @@ def essay3():
     input("Pain and Agony bring Beauty and Appreciation into play")
 
 
-essay_choices = {"a": "Sexualizing Food", "b": "The Mind and Body in all glory",
-                 "c": "Pain and Agony bring Beauty and Appreciation into play"}
+essay_choices = {1: "Sexualizing Food", 2: "The Mind and Body in all glory",
+                 3: "Pain and Agony bring Beauty and Appreciation into play"}
 essay_count = 0
+main(essay_count)
