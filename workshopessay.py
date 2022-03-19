@@ -45,8 +45,18 @@ def main_function(essay_count):
             essay3()
             main_function(essay_count)
 
-    else:
-        input("Thank you for tagging along, I hope you enjoy that little journey.")
+    else:  # This won't fucking run properly, what's going on? Need to figure out how to run it again. Maybe a while True loop?
+        print("Thank you for tagging along, I hope you enjoy that little journey.")
+        input("Would you like to read the essays again?")
+        print("\n (1) Yes, I would like to bore myself some more as I have nothing better to do. \n (2) No, I have better things to do.\n")
+        run_it_back = int(
+            input("Indulge me and enter a number that suits your satisfaction: "))
+        for value in run_it_back:
+            if value == "1":
+                print("Wrong choice! Back to the start we go")
+                essay_count -= 3
+            elif value == "2":
+                print("I understand, enjoy the time you have left.")
 
 
 # Functions to help connect/modify appearances of main body.
@@ -120,6 +130,8 @@ essay_titles = ["Sexualizing Food", "The Mind and Body in all its glory",
 
 essay_choices = ["My first memory",
                  "The concept of muscle memory", "Why do I do this to myself?"]
+
+
 essay_count = 0
 # Calling on the functions in order.
 intro()
