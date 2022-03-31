@@ -64,6 +64,7 @@ def main_function(essay_count):
 # Functions to help connect/modify appearances of main body.
 
 
+# Maybe not use numbers. Have a random function of numbers or symbols.
 def essay_selector(essay_choices):
     for number in range(0, len(essay_choices)):
         print("("+str(number+1)+") " + essay_choices[number] + '\n')
