@@ -128,7 +128,7 @@ def essay1():
     """)
 
 
-def essay2():
+def essay2():  # Did not flow with the rest of the piece, need to change how much I put in.
     format_headers("The Mind and Body in all its glory")
     format_main_text("""
     Knowledge is power, as the saying goes. This particular memory has a more direct effect as it is an exploration of what memory may truly be. In particular, I attempt to identify the true nature of muscle memory as it has long been a concept or an idea that I was aware of but never attempted to put any extra effort into discovering until a research paper prompted it.""")
@@ -178,6 +178,17 @@ def essay3():
         till it was complete. The beauty of writing in code is seeing the 
         fruits of your labor. When it runs perfectly, the satisfaction is 
         immeasurable.")
+    """)
+    input("""
+    def second_part():
+        format_main_text("When presented with the opportunity to write my essay 
+        in a code editor, I immediately knew that I would encounter several 
+        problems. These included trying to figure out how to properly format
+        the words so that they appeared in a coherent and readable format,
+        as well as ensuring that the flow made sense. In short, the essay 
+        was a description of how I built the program and the challenges I faced.
+        ")
+        format_main_text(")
     """)
 
 
