@@ -152,7 +152,7 @@ def essay3():  # Expand upon.
     """)
 
     format_main_text("""
-    This specific piece revolves around the memory of information and processing that information in a manner that will allow for better understanding, comprehension, and application in future scenarios that will require the specific information being practised. In part, this piece has connections with "The Mind and Body in all its Glory", as it utilizes muscle memory in application as it attempts to ensure that the information is not forgotten, nor are the skills out of practice. """)
+    This specific piece revolves around the memory of information and processing that information in a manner that will allow for better understanding, comprehension, and application in future scenarios that will require the specific information being practiced. In part, this piece has connections with "The Mind and Body in all its Glory", as it utilizes muscle memory in application as it attempts to ensure that the information is not forgotten, nor are the skills out of practice. """)
 
     input("""
     def format_main_text(text):
