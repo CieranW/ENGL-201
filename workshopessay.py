@@ -105,13 +105,12 @@ def format_main_text(text):
 def intro():
     # Title needs to be changed, something to do with memory. Also, I need a good intro paragraph into memory and how it relates to the essays.
     format_headers("Another One")
-    format_main_text("We all have memories, be they good or bad, they define us and made us the people we are today. Our choices, fears, and desires are all influenced by events that have occurred in the past, no matter the level of significance.")
-    format_main_text("There are many different factors when it comes to remembering something, the significance of the event, importance or usefulness of the knowledge acquired, or how it has affected your life. In this short piece, I attempt to acknowledge these three particular areas of memory and the effects that they have.")
+    format_main_text("We all have memories, be they good or bad, they define us and made us the people we are today. Our choices, fears, and desires are all influenced by events that have occurred in the past, no matter the level of significance. There are many different factors when it comes to remembering something: the significance of the event, importance or usefulness of the knowledge acquired, or how it has affected your life. In this short piece, I attempt to acknowledge these three particular areas of memory and the effects that they have.")
 
 
 def essay1():
     format_headers("My First Time")
-    format_main_text("There are plenty of items/choices that have important impacts on one's life. For me, it had to be the very first memory that I can recall: My first trip to Greece with my parents and baby brother. Here it is: ")
+    format_main_text("There are plenty of events that have important impacts on one's life. For me, it had to be the very first memory that I can recall: My first trip to Greece with my parents and baby brother. Here it is: ")
     format_main_text("""
     Greece was gorgeous, but how would I know? For one, I was four years old, and my memory is outright terrible, I can barely recall what happened last week, much less hope to remember events that transpired almost fifteen years ago. However, one thing is clear as day, the food was bloody amazing. Fresh seafood, beautifully grown olives made into sensational olive oil, and so much more. It was heaven for the taste buds.
     """)
@@ -132,7 +131,7 @@ def essay1():
 def essay2():  # Did not flow with the rest of the piece, need to change how much I put in.
     format_headers("The Mind and Body in all its glory")
     format_main_text("""
-    Knowledge is power, as the saying goes. This particular memory has a more direct effect as it is an exploration of what memory may truly be. In particular, I attempt to identify the true nature of muscle memory as it has long been a concept or an idea that I was aware of but never attempted to put any extra effort into discovering until a research paper prompted it.""")
+    Knowledge is power, as the saying goes. This particular memory has a more direct effect as it is an exploration of what memory may truly be. In particular, I attempt to identify the true nature of muscle memory as it has long been a concept or an idea that I was aware of but never attempted to put any extra effort into discovering until a research paper prompted it. With this particular piece, I recognize the importance of memory and how it has helped to dictate certain philosophies and experiences. """)
     format_main_text(
         "I present an excerpt of the mind and body string theory: ")
     format_main_text("""
@@ -151,6 +150,10 @@ def essay3():  # Expand upon.
     format_main_text("""
     This next part may be a little confusing, so I'm here to help. You want to read in between the double quotation marks. So any text after the format_main_text is part of the essay. I am simply using this format as a shell to further emphasize the usage of Python to write an essay, as well as show you what it may look like typing it out in a code editor. The first thing you are going to see is [def format_main_text(text):] This is a function that I used to ensure that the text, when printed in the terminal, prints out in a nice, easy to read format. [def first_part():] and so on are going to be where the essay is located. In between the format_main_text()
     """)
+
+    format_main_text("""
+    This specific piece revolves around the memory of information and processing that information in a manner that will allow for better understanding, comprehension, and application in future scenarios that will require the specific information being practised. In part, this piece has connections with "The Mind and Body in all its Glory", as it utilizes muscle memory in application as it attempts to ensure that the information is not forgotten, nor are the skills out of practice. """)
+
     input("""
     def format_main_text(text):
         print(textwrap.fill(text))
@@ -217,7 +220,14 @@ def essay3():  # Expand upon.
     """)
     input("""
     def third_part():
-        format_main_text("") 
+        format_main_text("Wrapping this up now as I appear to have lost track 
+        of where I was going with this. In short, writing an essay in 
+        a code editor is not impossible, but it certainly provides a range 
+        of difficulty and challenges. It was a good challenge, and applying it 
+        in the manner seen above and right now was an insight into how the 
+        text may be formatted when in a code editor. I quite enjoyed this 
+        little journey of a more applicable approach rather than a 
+        theoretical one. ") 
     """)  # Need to come back and brainstorm again. Lost the direction for a bit.
 
 
